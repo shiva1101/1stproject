@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+:root{
+    --main-color:#cf8224;
+    --primary-color: #17a89c;
+}
+/* utility */
+button{
+    padding: 10px 10px;
+    background-color: var(--main-color);
+    border: none;
+    cursor: pointer;
+}
+/* resets */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background:rgb(185, 138, 138);
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+    color: antiquewhite;
+}
+li{
+    display: inline;
+    list-style: none;
+}
+li a{
+    color: rgb(238, 233, 242);
+    text-decoration: none;
+    margin-left: 50px;
+    padding-bottom: 20px;
+}
+li a:hover{
+    border-bottom: 2px solid var(--primary-color);
+}
+/* nav ends */
+.header{
+    background-image: url(cofeee.jpeg);
+    background-position: top;
+    background-size: cover;
+    height: 100vh;
+    font-family: "Oswald", sans-serif;
+    font-weight: normal;
+    /* flexbox */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    position: relative; 
+    text-align: center;
+    color: aliceblue;
+}
+.main-headings{
+    position: absolute;
+    top: 7rem;
+    font-size: 4rem;
+    word-spacing: 10px;
+    /* margin-bottom: -50px; */
+}
+.prim-headings{
+    position: absolute;
+    bottom: 4rem;
+    font-size: 4rem;
+    word-spacing: 10px;
+    margin-bottom: 40px;
+}
+.main-butn{
+    position:absolute;
+    bottom: 3rem;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background: black;
+    background: var(--main-color);
+    transform: translateY(60px);
+}
+/* story starts */
+#our-story{
+    /* height: 100vh; */
+    margin-top: 15%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.img{
+    width: 750px;
+    height: 560px;
+    background: url(coffee2.webp);
+    background-position: center;
+    background-size: cover;
+}
+.title-style{
+    display: flex;
+    align-items: center;
+}
+.title{
+    font-family: "Oswald", sans-serif;
+    font-size: 4rem;
+    color: aliceblue;
+    transform: translateX(-100px);
+}
+.line{
+    height: 2px;
+    width: 100px;
+    background: white;
+    transform: translateX(-120px);
+}
+.section-content p{
+    max-width: 500px;
+    color: antiquewhite;
+    font-family: sans-serif;
+    line-height: 20px;
+    margin: 20px 0;
+}
+.coffee-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10rem;
+}
+.imge2{
+    width: 600px;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+}
+.content-section p{
+    max-width: 500px;
+    margin-top: 20px;
+    font-family: sans-serif;
+    color:bisque;
+}
+.title2{
+    font-size: 3rem;
+    color: azure;
+    font-family:"Oswald", sans-serif;
+    font-weight: normal;
+}
+/* coffee start end */
+.products{
+    margin-top: 5rem;
+}
+.title3{
+    font-size: 4rem;
+    margin-left: 10rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.card{
+    border: 2px solid rgb(53, 58, 57);
+    height: 400px;
+    width: 400px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+    position: relative;
+}
+.card-img{
+    width: 200px;
+    height: 400px;
+    position: absolute;
+    top: -60px;
+}
+.img1{
+    background: url(cofeee.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    width: 300px;
+}
+.img2{
+    background: url(coffee2.webp);
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    width: 300px;
+}
+.img3{
+    background: url(cape.webp);
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    width: 300px;
+}
+.card-title{
+    font-family: sans-serif;
+    background: white;
+    margin-bottom: 50px;
+}
+.card.items{
+    color: white;
+    margin:20px 0;
+    font-family: sans-serif;
+    
+}
+footer{
+    height: 30vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: rgb(8, 8, 8);
+    font-family: sans-serif;
+}
+footer .container{
+    margin: 20px;
+    max-width: 300px;
+    text-align: center;
+}
+footer.heading-info{
+    margin-bottom: 20px;
+}
+footer .para{
+    text-align: center;
+    line-height: 25px;
+    width: 100%;
+    margin-top: 30px;
+    opacity: 0.7;
+}
+span{
+    color: rgb(73, 91, 95);
+}
+
+hr{
+    /* margin-bottom: 20px; */
+    border: var(--main-color);
+    /* width: 500px; */
+    /* margin: 0 auto; */
+}
+
+/* media queries */
+@media only screen and (max-width:768px){
+    .main-headings,.prim-headings{
+        font-size: 2.5rem;
+    }
+    #our-story{
+        text-align: center;
+    }
+    #our-story .title{
+        transform: translateX(50px);
+    }
+    #our-story.line{
+        display: none;
+    }
+    .content-section{
+        text-align: center;
+    }
+    .title2{
+        text-align: center;
+        margin: 0 auto;
+    }
+    #our-story .img-container{
+        margin-top: 5rem;
+        width: 50%;
+    }
+    /* .coffee-container .img-container{
+        margin-top: 8rem;
+        width: 20%;
+    } */
+    
+}
